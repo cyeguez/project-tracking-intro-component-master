@@ -1,3 +1,13 @@
+:root {
+  --primary: hsl(0, 100%, 68%);
+  --secondary: hsl(207, 33%, 95%);
+  --tertiary: hsl(230, 29%, 20%);
+  --Grayish-Blue: hsl(231, 7%, 65%);
+
+  --font1: "Barlow-Condensed";
+  --font2: "Barlow";
+}
+
 .footer {
   .attribution {
     font-size: 11px;
