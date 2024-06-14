@@ -8,6 +8,139 @@
   --font2: "Barlow";
 }
 
+/* Estilos generales */
+body {
+  font-size: 18px;
+  color: var(--tertiary);
+  font-family: var(--font1);
+}
+
+
+
+.header {
+  height: 424px;
+  background-image: url(../asset/images/illustration-devices.svg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position-y: 126px;
+  background-position-x: 15px;
+
+  position: relative;
+
+  .header__backgroud {
+    background-color: var(--secondary);
+    height: 100%;
+    width: 58%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    border-radius: 0 0 0 80px;
+  }
+
+  .header__navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 32px 0 32px;
+  }
+
+  .navigation__logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  nav {
+    .nav__icon-menu {
+      position: relative;
+
+      width: 20px;
+      height: 20px;
+
+      .icon-menu__close {
+        display: none;
+      }
+
+      .icon-menu__close,
+      icon-menu__hamburguer {
+        cursor: pointer;
+      }
+    }
+
+    .links {
+      position: absolute;
+      width: calc(100% - 64px);
+      background-color: white;
+      border: 1px solir blue;
+      top: 100px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.5s ease;
+      transform: scale(0);
+
+      .link {
+        padding-block: 16px;
+        color: var(--tertiary);
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+
+      .division {
+        height: 1px;
+        width: calc(90% - 24px);
+        background-color: var(--Grayish-Blue);
+      }
+
+      .link--gray {
+        color: var(--Grayish-Blue);
+      }
+    }
+  }
+}
+
+.container__main {
+  margin-top: 25px;
+  padding-inline: 32px;
+  font-family: var(--font2);
+
+  .main__enun {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 15px;
+
+    .main__wrap {
+      padding: 3px 8px;
+      background-color: var(--tertiary);
+      color: white;
+      border-radius: 50px;
+    }
+  }
+
+  .main__title{
+    color: var(--tertiary);
+    font-family: var(--font2);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 26px;
+    
+  }
+}
+
 .footer {
   .attribution {
     font-size: 11px;
